@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+	  <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Imagenes\logotipo Mareano.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="HamburgerMenuControl">
+      <HintPath>..\..\..\Downloads\lateral bar\wpf-ui-workshops-master\HamburgerMenuControl\bin\Debug\netcoreapp3.1\HamburgerMenuControl.dll</HintPath>
+    </Reference>
+    <Reference Include="WpfMath">
+      <HintPath>..\..\..\Downloads\MATH WPF\wpf-math-master\src\WpfMath\bin\Debug\netcoreapp3.1\WpfMath.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Imagenes\logotipo Mareano.png" />
+  </ItemGroup>
+
+</Project>
